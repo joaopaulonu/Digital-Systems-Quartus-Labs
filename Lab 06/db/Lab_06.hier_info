@@ -1,0 +1,16 @@
+|Lab_06
+sw[0] => f3.IN0
+sw[0] => f3.IN1
+sw[0] => f4.IN0
+sw[0] => p1_int.IN1
+sw[1] => p1_int.IN1
+sw[2] => p1_int.IN0
+sw[2] => f3.IN0
+sw[2] => f4.IN1
+sw[3] => f3.IN1
+sw[3] => f3.IN1
+sw[3] => p1_int.IN1
+f3 << f3.DB_MAX_OUTPUT_PORT_TYPE
+f4 << f4.DB_MAX_OUTPUT_PORT_TYPE
+
+
