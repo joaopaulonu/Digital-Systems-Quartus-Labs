@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity circuito_lab06 is
+    Port ( 
+        sw   : in  STD_LOGIC_VECTOR (3 downto 0); -- x1=sw(3), x2=sw(2), x3=sw(1), x4=sw(0)
+        f3   : out STD_LOGIC; -- LED Vermelho 0
+        f4   : out STD_LOGIC  -- LED Verde 7
+    );
+end circuito_lab06;
+
+architecture Behavioral of circuito_lab06 is
+    signal x1, x2, x3, x4 : std_logic;
+    signal p1_int : std_logic; -- Sinal interno para P1
+begin
+    -- Atribuição das entradas (Switches)
+    x1 <= sw(3);
+    x2 <= sw(2);
+    x3 <= sw(1);
+    x4 <= sw(0);
+
+    -- Lógica do Circuito
+    p1_int <= (not x1) and x2 and x3 and (not x4);
+    
+    f3 <= ((not x1) and x4) or (x1 and x2 and x4) or p1_int;
+    f4 <= p1_int or ((not x2) and x4);
+
+end Behavioral;

@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity tb_circuito_lab06 is
+end tb_circuito_lab06;
+
+architecture stimulus of tb_circuito_lab06 is
+    signal sw_s : std_logic_vector(3 downto 0) := "0000";
+    signal f3_s, f4_s : std_logic;
+begin
+    -- Instancia a entidade Lab_06
+    uut: entity work.Lab_06
+        port map (
+            sw => sw_s,
+            f3 => f3_s,
+            f4 => f4_s
+        );
+
+    process
+    begin
+        for i in 0 to 15 loop
+            sw_s <= std_logic_vector(to_unsigned(i, 4));
+            wait for 20 ns;
+        end loop;
+        wait;
+    end process;
+end stimulus;
