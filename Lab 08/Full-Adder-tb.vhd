@@ -1,0 +1,28 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity somador_completo_tb is
+end somador_completo_tb;
+
+architecture sim of somador_completo_tb is
+    component full_adder is -- Nome atualizado
+        port (a, b, cin: in std_logic; sum, cout: out std_logic);
+    end component;
+    
+    signal a_in, b_in, cin_in, sum_out, cout_out : std_logic := '0';
+begin
+    uut: full_adder port map(a_in, b_in, cin_in, sum_out, cout_out);
+
+    process
+    begin
+        a_in <= '0'; b_in <= '0'; cin_in <= '0'; wait for 10 ns;
+        a_in <= '0'; b_in <= '0'; cin_in <= '1'; wait for 10 ns;
+        a_in <= '0'; b_in <= '1'; cin_in <= '0'; wait for 10 ns;
+        a_in <= '0'; b_in <= '1'; cin_in <= '1'; wait for 10 ns;
+        a_in <= '1'; b_in <= '0'; cin_in <= '0'; wait for 10 ns;
+        a_in <= '1'; b_in <= '0'; cin_in <= '1'; wait for 10 ns;
+        a_in <= '1'; b_in <= '1'; cin_in <= '0'; wait for 10 ns;
+        a_in <= '1'; b_in <= '1'; cin_in <= '1'; wait for 10 ns;
+        wait;
+    end process;
+end sim;

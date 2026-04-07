@@ -1,0 +1,31 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity somador_tb is
+end somador_tb;
+
+architecture sim of somador_tb is
+    component somador is
+        port(SW : in std_logic_vector(3 downto 0); LEDR: out std_logic_vector(2 downto 0));
+    end component;
+
+    signal sw_in : std_logic_vector(3 downto 0) := (others => '0');
+    signal ledr_out : std_logic_vector(2 downto 0);
+begin
+    uut: somador port map(SW => sw_in, LEDR => ledr_out);
+
+    process
+    begin
+        -- Usando dois laços FOR para testar todas as combinações (A e B de 0 a 3)
+        for i in 0 to 3 loop
+            for j in 0 to 3 loop
+                -- i mapeia para A (SW 1 e 0), j mapeia para B (SW 3 e 2)
+                sw_in(1 downto 0) <= std_logic_vector(to_unsigned(i, 2));
+                sw_in(3 downto 2) <= std_logic_vector(to_unsigned(j, 2));
+                wait for 10 ns;
+            end loop;
+        end loop;
+        wait;
+    end process;
+end sim;

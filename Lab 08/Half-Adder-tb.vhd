@@ -1,0 +1,24 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity meio_somador_tb is
+end meio_somador_tb;
+
+architecture sim of meio_somador_tb is
+    component half_adde is -- Nome atualizado
+        port (a, b: in std_logic; sum, carry: out std_logic);
+    end component;
+    
+    signal a_in, b_in, sum_out, carry_out : std_logic := '0';
+begin
+    uut: half_adde port map(a => a_in, b => b_in, sum => sum_out, carry => carry_out);
+
+    process
+    begin
+        a_in <= '0'; b_in <= '0'; wait for 10 ns;
+        a_in <= '0'; b_in <= '1'; wait for 10 ns;
+        a_in <= '1'; b_in <= '0'; wait for 10 ns;
+        a_in <= '1'; b_in <= '1'; wait for 10 ns;
+        wait;
+    end process;
+end sim;

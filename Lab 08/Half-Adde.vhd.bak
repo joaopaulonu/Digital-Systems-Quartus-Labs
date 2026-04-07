@@ -1,0 +1,15 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity meio_somador is
+    port (
+        a, b : in std_logic;
+        sum, carry : out std_logic
+    );
+end meio_somador;
+
+architecture rtl of meio_somador is
+begin
+    sum <= a xor b;
+    carry <= a and b;
+end rtl;

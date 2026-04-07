@@ -1,0 +1,33 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+use work.adder.all; -- importa o package criado
+
+entity somador is
+    port(
+        SW : in std_logic_vector(3 downto 0);
+        LEDR: out std_logic_vector(2 downto 0)
+    );
+end somador;
+
+architecture arc_somador of somador is
+    -- sinais internos para os carries internos
+    signal c0, cout: std_logic;
+    -- sinais internos para melhorar a legibilidade
+    signal A, B, SUM: std_logic_vector(1 downto 0);
+begin
+    -- mapeando as entradas da placa para os sinais intermediarios
+    A <= SW(1 downto 0);
+    B <= SW(3 downto 2);
+
+    -- estágios intermediários usando as entidades "importadas"
+    -- usando meio somador para o primeiro bit
+    FA0: meio_somador port map (a => A(0), b => B(0), sum => SUM(0), carry => c0);
+    
+    -- usando um somador completo para o segundo bit
+    FA1: somador_completo port map (a => A(1), b => B(1), cin => c0, sum => SUM(1), cout => cout);
+
+    -- mapeando o resultado da soma para os leds da placa
+    LEDR(0) <= SUM(0);
+    LEDR(1) <= SUM(1);
+    LEDR(2) <= cout;
+end arc_somador;

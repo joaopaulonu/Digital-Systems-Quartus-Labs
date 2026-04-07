@@ -1,0 +1,18 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+package adder is
+    component meio_somador is
+        port (
+            a, b: in std_logic;
+            sum, carry: out std_logic
+        );
+    end component;
+
+    component somador_completo is
+        port (
+            a, b, cin: in std_logic;
+            sum, cout: out std_logic
+        );
+    end component;
+end package adder;
