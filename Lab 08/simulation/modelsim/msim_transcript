@@ -1,0 +1,284 @@
+# Reading pref.tcl
+# do Lab08_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/jpnun/Documents/Lab 08/Half-Adde.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:45 on Apr 07,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/jpnun/Documents/Lab 08/Half-Adde.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity half_adde
+# -- Compiling architecture rtl of half_adde
+# End time: 15:34:45 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/jpnun/Documents/Lab 08/Full-Adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:46 on Apr 07,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/jpnun/Documents/Lab 08/Full-Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture rtl of full_adder
+# End time: 15:34:46 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/jpnun/Documents/Lab 08/Adder-Package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:46 on Apr 07,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/jpnun/Documents/Lab 08/Adder-Package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package adder_package
+# End time: 15:34:46 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/jpnun/Documents/Lab 08/adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:34:46 on Apr 07,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/jpnun/Documents/Lab 08/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package adder_package
+# -- Compiling entity adder
+# -- Compiling architecture arc_somador of adder
+# End time: 15:34:46 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:47 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package adder_package
+# -- Compiling entity adder
+# -- Compiling architecture arc_somador of adder
+# End time: 15:36:48 on Apr 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Adder-Package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:48 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Adder-Package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package adder_package
+# End time: 15:36:48 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Adder-tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:48 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Adder-tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity somador_tb
+# -- Compiling architecture sim of somador_tb
+# End time: 15:36:48 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Full-Adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:48 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Full-Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture rtl of full_adder
+# End time: 15:36:48 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Full-Adder-tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:48 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Full-Adder-tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity somador_completo_tb
+# -- Compiling architecture sim of somador_completo_tb
+# End time: 15:36:48 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Half-Adde.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:48 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Half-Adde.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity half_adde
+# -- Compiling architecture rtl of half_adde
+# End time: 15:36:48 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Half-Adder-tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:48 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Half-Adder-tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity meio_somador_tb
+# -- Compiling architecture sim of meio_somador_tb
+# End time: 15:36:49 on Apr 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:54 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package adder_package
+# -- Compiling entity adder
+# -- Compiling architecture arc_somador of adder
+# End time: 15:36:54 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Adder-Package.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:54 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Adder-Package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package adder_package
+# End time: 15:36:54 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Adder-tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:54 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Adder-tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity somador_tb
+# -- Compiling architecture sim of somador_tb
+# End time: 15:36:54 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Full-Adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:54 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Full-Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity full_adder
+# -- Compiling architecture rtl of full_adder
+# End time: 15:36:54 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Full-Adder-tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:55 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Full-Adder-tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity somador_completo_tb
+# -- Compiling architecture sim of somador_completo_tb
+# End time: 15:36:55 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Half-Adde.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:55 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Half-Adde.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity half_adde
+# -- Compiling architecture rtl of half_adde
+# End time: 15:36:55 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/Half-Adder-tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:55 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/Half-Adder-tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity meio_somador_tb
+# -- Compiling architecture sim of meio_somador_tb
+# End time: 15:36:55 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/jpnun/Documents/Lab 08/adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:36:58 on Apr 07,2026
+# vcom -reportprogress 300 -work work C:/Users/jpnun/Documents/Lab 08/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package adder_package
+# -- Compiling entity adder
+# -- Compiling architecture arc_somador of adder
+# End time: 15:36:58 on Apr 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.somador_tb
+# vsim work.somador_tb 
+# Start time: 15:37:34 on Apr 07,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.somador_tb(sim)
+# Loading work.adder_package
+# Loading work.adder(arc_somador)
+# Loading work.half_adde(rtl)
+# Loading work.full_adder(rtl)
+add wave -position insertpoint  \
+sim:/somador_tb/sw_in
+add wave -position insertpoint  \
+sim:/somador_tb/ledr_out
+run -all
+vsim work.somador_completo_tb
+# End time: 15:42:01 on Apr 07,2026, Elapsed time: 0:04:27
+# Errors: 0, Warnings: 0
+# vsim work.somador_completo_tb 
+# Start time: 15:42:01 on Apr 07,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.somador_completo_tb(sim)
+# Loading work.full_adder(rtl)
+add wave -position insertpoint  \
+sim:/somador_completo_tb/a_in
+add wave -position insertpoint  \
+sim:/somador_completo_tb/b_in
+add wave -position insertpoint  \
+sim:/somador_completo_tb/cin_in
+add wave -position insertpoint  \
+sim:/somador_completo_tb/sum_out
+add wave -position insertpoint  \
+sim:/somador_completo_tb/cout_out
+run -all
+vsim work.meio_somador_tb
+# End time: 15:43:48 on Apr 07,2026, Elapsed time: 0:01:47
+# Errors: 0, Warnings: 0
+# vsim work.meio_somador_tb 
+# Start time: 15:43:48 on Apr 07,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.meio_somador_tb(sim)
+# Loading work.half_adde(rtl)
+add wave -position insertpoint  \
+sim:/meio_somador_tb/a_in
+add wave -position insertpoint  \
+sim:/meio_somador_tb/b_in
+add wave -position insertpoint  \
+sim:/meio_somador_tb/sum_out
+add wave -position insertpoint  \
+sim:/meio_somador_tb/carry_out
+run -all
+# End time: 15:46:04 on Apr 07,2026, Elapsed time: 0:02:16
+# Errors: 0, Warnings: 0

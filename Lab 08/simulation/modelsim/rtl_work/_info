@@ -1,0 +1,283 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/jpnun/Documents/Lab 08/simulation/modelsim
+Eadder
+Z1 w1775570134
+Z2 DPx4 work 13 adder_package 0 22 TVYn^j:QoBezTO@bW4e:z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 18
+R0
+Z5 8C:/Users/jpnun/Documents/Lab 08/adder.vhd
+Z6 FC:/Users/jpnun/Documents/Lab 08/adder.vhd
+l0
+L5 1
+VZDJ1f8CMha4aTWQVM;YXm0
+!s100 DNDPm:GNIZVj4DTV>IZ>j2
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1775587018
+!i10b 1
+Z9 !s108 1775587018.000000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/jpnun/Documents/Lab 08/adder.vhd|
+Z11 !s107 C:/Users/jpnun/Documents/Lab 08/adder.vhd|
+!i113 1
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Aarc_somador
+R2
+R3
+R4
+Z14 DEx4 work 5 adder 0 22 ZDJ1f8CMha4aTWQVM;YXm0
+!i122 18
+l15
+Z15 L12 17
+Z16 V[nn5c:?Y6_1XWz=7N;U]90
+Z17 !s100 4f[TD?MY6Cc@n_NPR1z1E3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Padder_package
+R3
+R4
+!i122 12
+w1775570124
+R0
+8C:/Users/jpnun/Documents/Lab 08/Adder-Package.vhd
+FC:/Users/jpnun/Documents/Lab 08/Adder-Package.vhd
+l0
+L4 1
+VTVYn^j:QoBezTO@bW4e:z1
+!s100 hT4zO[I3?eI]jLU>dlX3>0
+R7
+32
+Z18 !s110 1775587014
+!i10b 1
+Z19 !s108 1775587014.000000
+!s90 -reportprogress|300|-work|work|C:/Users/jpnun/Documents/Lab 08/Adder-Package.vhd|
+!s107 C:/Users/jpnun/Documents/Lab 08/Adder-Package.vhd|
+!i113 1
+R12
+R13
+Efull_adder
+Z20 w1775570082
+R3
+R4
+!i122 14
+R0
+Z21 8C:/Users/jpnun/Documents/Lab 08/Full-Adder.vhd
+Z22 FC:/Users/jpnun/Documents/Lab 08/Full-Adder.vhd
+l0
+L4 1
+VN`F4?HhN@Q4GNEoQd8>e`2
+!s100 VNjMg@J=9:Nm6?S63FFaZ1
+R7
+32
+R18
+!i10b 1
+R19
+Z23 !s90 -reportprogress|300|-work|work|C:/Users/jpnun/Documents/Lab 08/Full-Adder.vhd|
+Z24 !s107 C:/Users/jpnun/Documents/Lab 08/Full-Adder.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 10 full_adder 0 22 N`F4?HhN@Q4GNEoQd8>e`2
+!i122 14
+l12
+Z25 L11 5
+VJhGL78RUBgod_TL@cjG;41
+!s100 1o]OOW?cHSiODd2DBU3590
+R7
+32
+R18
+!i10b 1
+R19
+R23
+R24
+!i113 1
+R12
+R13
+Ehalf_adde
+Z26 w1775570068
+R3
+R4
+!i122 16
+R0
+Z27 8C:/Users/jpnun/Documents/Lab 08/Half-Adde.vhd
+Z28 FC:/Users/jpnun/Documents/Lab 08/Half-Adde.vhd
+l0
+L4 1
+V]1j>d@I=MGL[4O3dQHJE[1
+!s100 9g18EX7FlBAPjm]SDJ1Yi3
+R7
+32
+Z29 !s110 1775587015
+!i10b 1
+Z30 !s108 1775587015.000000
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/jpnun/Documents/Lab 08/Half-Adde.vhd|
+Z32 !s107 C:/Users/jpnun/Documents/Lab 08/Half-Adde.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 9 half_adde 0 22 ]1j>d@I=MGL[4O3dQHJE[1
+!i122 16
+l12
+R25
+V1hGPlB2XciC07M1m1K[>L2
+!s100 <1eYaJ9:jFVFH0^l98I152
+R7
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R12
+R13
+Emeio_somador_tb
+Z33 w1775570267
+R3
+R4
+!i122 17
+R0
+Z34 8C:/Users/jpnun/Documents/Lab 08/Half-Adder-tb.vhd
+Z35 FC:/Users/jpnun/Documents/Lab 08/Half-Adder-tb.vhd
+l0
+L4 1
+V0BS@R3z`CKI6ORPXY:i=:2
+!s100 Q<G1^>Fe6MQRF;J0Zj<`V2
+R7
+32
+R29
+!i10b 1
+R30
+Z36 !s90 -reportprogress|300|-work|work|C:/Users/jpnun/Documents/Lab 08/Half-Adder-tb.vhd|
+Z37 !s107 C:/Users/jpnun/Documents/Lab 08/Half-Adder-tb.vhd|
+!i113 1
+R12
+R13
+Asim
+R3
+R4
+DEx4 work 15 meio_somador_tb 0 22 0BS@R3z`CKI6ORPXY:i=:2
+!i122 17
+l13
+L7 18
+V6l=hNcDfLfeF?dYoEX^7[1
+!s100 FF4aEkG52CzNG`1`UcF9j0
+R7
+32
+R29
+!i10b 1
+R30
+R36
+R37
+!i113 1
+R12
+R13
+Esomador_completo_tb
+Z38 w1775570281
+R3
+R4
+!i122 15
+R0
+Z39 8C:/Users/jpnun/Documents/Lab 08/Full-Adder-tb.vhd
+Z40 FC:/Users/jpnun/Documents/Lab 08/Full-Adder-tb.vhd
+l0
+L4 1
+VjEK=I@j0Ejnmc@@?n>g252
+!s100 WU>SR<B<ofd1C71=1@L]h2
+R7
+32
+R29
+!i10b 1
+R30
+Z41 !s90 -reportprogress|300|-work|work|C:/Users/jpnun/Documents/Lab 08/Full-Adder-tb.vhd|
+Z42 !s107 C:/Users/jpnun/Documents/Lab 08/Full-Adder-tb.vhd|
+!i113 1
+R12
+R13
+Asim
+R3
+R4
+DEx4 work 19 somador_completo_tb 0 22 jEK=I@j0Ejnmc@@?n>g252
+!i122 15
+l13
+L7 22
+Va=1iVT?oIo@fiJWHR06i73
+!s100 =`4ihnO[?gK2Y<0W[iZ_C3
+R7
+32
+R29
+!i10b 1
+R30
+R41
+R42
+!i113 1
+R12
+R13
+Esomador_tb
+Z43 w1775570294
+Z44 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 13
+R0
+Z45 8C:/Users/jpnun/Documents/Lab 08/Adder-tb.vhd
+Z46 FC:/Users/jpnun/Documents/Lab 08/Adder-tb.vhd
+l0
+L5 1
+V>5c1<4o:[zXRn=ocD[TjH0
+!s100 8@iaDgj_if1LQYRZHzDOh1
+R7
+32
+R18
+!i10b 1
+R19
+Z47 !s90 -reportprogress|300|-work|work|C:/Users/jpnun/Documents/Lab 08/Adder-tb.vhd|
+Z48 !s107 C:/Users/jpnun/Documents/Lab 08/Adder-tb.vhd|
+!i113 1
+R12
+R13
+Asim
+R44
+R3
+R4
+DEx4 work 10 somador_tb 0 22 >5c1<4o:[zXRn=ocD[TjH0
+!i122 13
+l15
+L8 20
+V>oz[GLNfYlhTkEaiPZ;Fb2
+!s100 ^fOoj83zNbemmdP7n4ZBB1
+R7
+32
+R18
+!i10b 1
+R19
+R47
+R48
+!i113 1
+R12
+R13
